@@ -1,7 +1,7 @@
 //How to make objects singleton or declare objects using constructors
-// const tinderUser = new Object()
-const tinderUser = {};
-
+// const tinderUser = new Object()->Singleton object
+const tinderUser = {};//->not a singleton object
+ 
 tinderUser.id = "123abc";
 tinderUser.name = "Sammy";
 tinderUser.isLoggedIn = false;
@@ -60,10 +60,14 @@ const course = {
   courseInstructor: "hitesh",
 };
 
-// course.courseInstructor
+//********************OBJECTS DESTRUCTURING AND JSON API******************/
 
+// course.courseInstructor
+//Another way to access the key from the objects is by using the curl braces
+//Here instructor can be used in place of courseInstructor
 const { courseInstructor: instructor } = course;
 
+//What is destructuring in javascript
 // console.log(courseInstructor);
 console.log(instructor);
 
